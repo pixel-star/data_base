@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+
+{%block content %}
+    <form class="grid" action="/change" method="POST">
+        <label for="Pasport">enter new pasport id :</label><br>
+        <input type="text" id="pasport" name="pasport"><br>
+        <input type="submit" class="file_submit">
+    </form>
+
+    {% if name1 %}
+    <h3>{{name1 }}</h3>
+    <a href="http://127.0.0.1:5000/">change id</a>
+    {% endif %}
+
+{% endblock %}

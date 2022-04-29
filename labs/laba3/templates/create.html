@@ -1,0 +1,19 @@
+{%extends 'base.html' %}
+
+{%block content %}
+    <form class="grid" action="/create" method="POST">
+        <label for="Pasport">enter new id :</label><br>
+        <input type="text" id="id" name="id"><br>
+
+        <label for="Pasport">enter new passport id :</label><br>
+        <input type="text" id="pasport2" name="pasport2"><br>
+
+        <label for="Pasport">enter new name :</label><br>
+        <input type="text" id="name" name="name"><br>
+        <input type="submit" class="file_submit">
+    </form>
+
+    <a href="http://127.0.0.1:5000/">choose id</a>
+
+
+{% endblock %}
